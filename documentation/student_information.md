@@ -3,9 +3,7 @@
 At some point you should receive an email with at least one tracking url.  This gives you access to forms that allow you two adjust your preferences over 
 potential assignments.
 
-The forms allow you to do two things: select a subset of all assignments that you are particularly interested in; and rank the assignments that you have selected.
-
-The other documentation pages in this directory explain how the assignments are determined.  What follows are more specific intructions.
+The basic idea is that you select a subset of all assignments that you are particularly interested in and add them to a 'portfolio'.  Then you can further rank the assignments in yur portfolio.
 
 One thing that will help you understand how your assignment is determined is that the algorithm takes place in two stages.  The first is a Phd student only matching.  All courses are available to them in this stage, including all the courses that do not require phd track assignments.  If there are more phd students to be assigned than there are phd track courses that require students, the phd students will be allocated to the masters track courses until all of them are given assignments, or all the assignments have been filled.
 
@@ -13,14 +11,18 @@ In the second stage masters students are allocated to the courses that remain.
 
 ## Phd students
 
-One thing you can always do is nothing - don't bother with the forms.  If you do that, the assumption is that you are indifferent among all possible assignments.  The algorithm will try to match you with a phd track assignment even if you are indifferent.  If there are more phd students than there are phd track courses, you may be assigned to one of the masters track courses.  Since we are using the student proposing version of the algorithm, there is absolutely nothing you can do (when you submit your preferences) to increase the chances that you will be placed in a phd track course.  If you are familiar with the theory, the algorithm is strategy proof for the proposing side.  The only thing that will increase your chances of being placed in the phd track is for one of the professors teaching in that track to express a preference for you.  If many professors ask for you, your preferences will be respected in choosing your final assignment.
+One thing you can always do is nothing - don't bother with the forms.  If you do that, the assumption is that you are indifferent among all possible assignments.  The algorithm will try to match you with a phd track assignment if you are indifferent.  If there are more phd students than there are phd track courses, you may be assigned to one of the masters track courses.  Since we are using the student proposing version of the algorithm, there is absolutely nothing you can do (when you submit your preferences) to increase the chances that you will be placed in your favorite course.  If you are familiar with the theory, the algorithm is strategy proof for the proposing side, which means you can never do better than you can by expressing your real preferences when you submit them.  It will never be in your interest to rank a course highest because you think it is the one you are most likely to get.  
 
-### Express a preference for a course
+If there is a particular professor who you want to work for you should definitely give rank the appropriate course and the one you most prefer by assigning it the highest score. There is no guarantee you'll ge the course if you do this since there are typically a few courses that a lot of students prefer.  You could try to convince the professor you like to rank you first as well, but be aware that if you are doing this for a popular course your professor probabably won't appreciate it.
 
-When you get to the select part of the process, select it first to 'add it to your portfolio' so to speak.  You don't need to select all the phd courses since the algorithm will try to place you in a phd course anyway.  Adding a course to your portfolio will automatically change it so that the system assumes that you strictly prefer any course in your portfolio to any course that is not in your portfolio.  
+If there are other course you like somewhat less than your favorite, just give them lower ranks than your favorite.  If you can't have your favorite, the algorithm will try to put you in your next favorite course.  So make sure all the courses you would like are listed.
 
-You can then go to the ranking part and rank the various course assignments in your portfolio.  There will likely be a reasonable demand for more experiences phd students. By ranking the options you can ensure your preferences are respected when you have many options.  Again, this is the student proposing version of deferred acceptance - you cannot increase your odds of getting a course you like by giving it a high ranking.  All you do is to honestly state what yoor favorite assignment would be and that preference will be respected when you have options.
+## Masters students
+
+The procedure is the same as it is for Ph'd students - select a portfolio, then rank the choices in your portfolio.  The main difference is that you will only see course options that do not have a Ph'd requirement.
 
 ###  How to say you don't want a course assignment
 
-You can ensure that you don't get a particular course assignment by adding it to your portfolio and giving it a weight of -1 (or just staying you don't want it in one of the apis).  It is important you realize that the interpretation of doing this is that you would rather have no assignment at all than act as a ta in the course you have chosen.  So only to this if you are sure that you would rather give up your ta assignment. 
+The algorithm tries to accomplish 2 goals, to give everyone an equal shot as getting the course they most prefer, and also to make sure that all the courses that  need to have phd students as tas, actually get them.  For this reason, you can no longer veto courses by assigning them negative scores. You try to assign a negaative score, but on submission it will just change it to zero, so the course will be treated as the least wanted course in your portfolio.  In turn, a course with a 0 score in your portfolio will be treated like any other course outside your portfolio.  If you aren't lucky enough to get into any of the courses that you really want, you will be randomly assinged to one of the courses which you have scored as 0.  If you are a Ph'd student, you'll be randomly assigned to a course that requires a phd student, so if you really want to be assigned to a masters course (as a ph'd student), you'll have to add it to your portfolio. 
+
+If there is really a course that you can't do, then you'll have to discuss that with the graduate program before the allocation.

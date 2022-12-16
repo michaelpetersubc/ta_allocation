@@ -6,12 +6,16 @@ The approach it uses is to turn the many to one allocation problem of putting ta
 
 A student allocation block contains very little information, just the name of the student, the degree program they are in, either MA or PHd and a random score. A course allocation block can contain a lot of information.  Basic setup is just to create all these blocks.
 
-In most applications, you should create the same number of course allocation blocks and student allocation blocks since you probably have commitments to both your students and courses.  The instructions below will explain how to create shared teaching assistants.  You probably also have some mission critical assignments - for example, you may need a particular student to act as a teaching assistant for the core micro theory course no matter what their preferences are.  These tricks are all explained in the section on `Running the algorithm` below.
+In most applications, you should create roughly the same number of course allocation blocks and student allocation blocks. One thing to be aware of is that the algorithm won't always match every ta with a course (nor every course with a ta).  The algorithm uses a Ph'd student first approach.  Ph'ds are allocated according to their preferences, even if they would like to ta for courses that only require Masters students as tas.  If Ph'd students rank Masters level courses highly, they may be allocated to them, and push out some Masters students who might otherwise have been allocated as tas.  If this happens some Ph'd level courses will not be allocated tas. 
+
+The instructions below will explain how to create shared teaching assistants.  You probably also have some mission critical assignments - for example, you may need a particular student to act as a teaching assistant for the core micro theory course no matter what their preferences are.  These tricks are all explained in the section on `Running the algorithm` below.
 
 Hopefully this outline will get you to the section where you need help quickly.
 
-## Courses
+## Configuration
 
-1. [Create a Session](session_create.md)
+## Sessions
+
+1. [Create a Session](sessions/session_create.md)
 1. [Create a course](course_create.md)
-    ![alt](session.png "Session")
+    

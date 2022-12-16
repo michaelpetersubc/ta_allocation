@@ -11,7 +11,7 @@ In the second stage masters students are allocated to the courses that remain.
 
 ## Option 1 - Ignore the form and don't bother
 
-That is fine except that you'll end up with a randomly selected ta.  If you have a ta assignment that requires a phd student, then you will end up with a phd student.  He or she will be selected from the set of students who have not been 'requested' by other instructors.  If you are teaching a course that only requires a masters level ta, then again you will get a randomly chosen ta who may be from either the ta stream or the phd stream, depending on demand.
+That is fine except that you'll end up with a randomly selected ta.  If you have a ta assignment that requires a phd student, then you will end up with a randomly select phd student.  He or she will be selected from the set of students who have not been 'requested' by other instructors.  If you are teaching a course that only requires a masters level ta, then again you will get a randomly chosen ta who may be from either the ta stream or the phd stream, depending on demand.
 
 ## Option 2 - choose a subset of ta's to single out for your course.
 
@@ -19,7 +19,7 @@ The forms you get when you follow the tracking url will first allow you to choos
 
 ## Option 3 - choose a subset then rank them.
 
-Once you have chosen a portfolio, you can go on to the ranking page, the link to which is in the preamble to the select form.  If you really want a student as your ta, just assign them a weight that is higher than 1.  If you want, you can strictly rank the students in your portfolio by assigning them each a different weight.  A higher weight is interpreted as a stronger preference in favor of the student.
+Once you have chosen a portfolio, you can go on to the ranking page, the link to which is in the preamble to the select form.  If you really want a student as your ta, just assign them a weight that is higher than 1.  If you want, you can strictly rank the students in your portfolio by assigning them each a different weight or score.  A higher weight (score) is interpreted as a stronger preference in favor of the student. (The number you provide aren't ranks, they are scores).
 
 If there is a student who you really don't want to have as your ta, add them to your portfolio and give them a weight of -1, and you won't get them.  It is possible that when you do this, you will not be allocated any ta - so be sure that you mean 'I would rather do the work myself than use this ta' whenever you give someone a weight of -1.
 

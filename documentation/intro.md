@@ -66,7 +66,7 @@ A potential pitfall is that it is left entirely up to instructors to choose the 
 
 There is also a difference between knowledge and belief.  Many instructors have strong views on the characteristics their assistants need even though these characteristics don't fit their course.  As was pointed out to me by someone who has done a lot of research into discrimination, preferences may well be a reflection of unconscious biases or outright prejudice.  Leaving it up participants to choose freely may lead to undesirable outcomes.
 
-Centralizing and algorithm and restricting choices may help when lack of knowledge is a problem.  It is less likely to improve matters if the problem is bias.  If nothing else, the current algorithm can be used without any preferences at all (except courses can specify Phd students only) and it will generate a feasible random assignment.  
+Centralizing andalgorithm and restricting choices may help when lack of knowledge is a problem.  It is less likely to improve matters if the problem is bias.  If nothing else, the current algorithm can be used without any preferences at all (except courses can specify Phd students only) and it will generate a feasible random assignment.  
 
 Finally, the gale-shaply agorithm doesn't work for fractional assigments. The algorithm and implementation provided here were partly inspired by [Marcin Peski](https://www.economics.utoronto.ca/index.php/index/person/person/faculty/1318) who developed a more centralized ta allocation algorithm, partly to deal with fractional assignment.  His approach is 'planner knows best'.  He doesn't make his implementation available, but he helped us considerably to set up this version.
 
