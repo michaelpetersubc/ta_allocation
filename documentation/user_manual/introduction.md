@@ -14,8 +14,10 @@ Hopefully this outline will get you to the section where you need help quickly.
 
 ## Configuration
 
+1. [Configuration](configuration/configuration.md)
+
 ## Sessions
 
-1. [Create a Session](sessions/create_session.md)
-1. [Create a course](course_create.md)
+1. [Create a session](sessions/create_session.md)
+
     
