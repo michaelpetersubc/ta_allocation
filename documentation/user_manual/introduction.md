@@ -20,4 +20,6 @@ Hopefully this outline will get you to the section where you need help quickly.
 
 1. [Create a session](sessions/create_session.md)
 
-    
+## Managing a session
+
+1. [Lifecycle](lifecyle.md)

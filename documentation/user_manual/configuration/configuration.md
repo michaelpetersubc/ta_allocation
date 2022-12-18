@@ -45,3 +45,20 @@ The final setting needed is to tell drupal the name of the database that contain
 
 ```
 Of course, replace the username and password with the strings that are appropriate for your application. 
+
+Finally, you'll need to set up your drupal menu for administration.  Here is the picture of the one we use.
+![alt](../assets/menu.png)
+
+Where you put the menu depends on the theme you use, and is up to you.  Here is a list of paths you can use to set up your own menus.  Use the string associated with the item as the path when you create your drupal menu item.
+
+1. `ta_alloc` - this is a link to the main adminstration page as described in [the sessions page](../sessions/create_session.md).  This link allows you to choose a session to work on, set the algorithm session and run the algorithm.
+1. `ta_alloc/config` - the link to the configuration page (julia path information, prefex for courses, drupal roles)
+1. `ta_alloc/courses_list` - list, create and edit your courses
+1. `ta_alloc/student_list` - list, create, edit students, set them active of inactive
+1. `ta_alloc/status` - a status report and a link to send email notifications (don't experiment with the email links unless you have only experimental student and faculty entries)
+1. `ta_alloc/session` - view, create, edit, and allocate for all the lectures in the session you are working on.  In our menu this is the link in `Course Allocations`
+1. `ta_alloc/by_degree/1` - view all the lectures (and their instructors) that have been assigned phd students as tas.   Once you have run the algorithm the list of assigned students will appear here.  This isn't a public page so you can use it as a way to inspect your current allocation.
+1. `ta_alloc/by_degree/2` - same as the last item except for lectures that have been assigned masters students
+1. `ta_alloc/faculty_list` - a list of faculty who have been assigned tas.  Clicking the `faculty_id` link will let you see the preferences of the corresponding faculty member.
+1. `student_allocations` - a list of students and their allocation status.  Clicking the `id` link will show you the corresponding student's preferences.
+1. `ta_alloc/student_by_degree/1` - a list of allocations for all the phd students.  Replace the `1` in the path with `2` and you'll get the masters students instead. Once you have run the algorithm, the allocation is show so you can use this link oth to check students preferences, and to see how they are allocated.   The information here is not made public until you lock the algorithm. 
