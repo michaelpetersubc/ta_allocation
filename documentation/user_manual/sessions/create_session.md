@@ -4,7 +4,7 @@ The very first step in configuration is to create sessions, one for each term, o
 
 The admin page opens when you click the top menu link which points to [https://yourwebsite.ca/ta_alloc](https://yourwebsite.ca/ta_alloc). The admin page looks like this:
 
- ![alt](assets/session.png "Session")
+ ![alt](documentation/user_manual/assets/session.png "Session")
  
 Three sessions have already been created in this illustration - one for spring and fall, and a fake session that will be used mostly for this documentation.
 
@@ -21,11 +21,11 @@ This is something to remember when you find unexpected things happening, and rea
  ## The public session
 The session you happen to be working on can be any session you choose.  At any point in time, however, there will also be an active public session.  This session determines what students and faculty see when they change their preferences.  The public session is also the one connected to the algorithm.  
 
-If you make changes, say by adding a course allocation, to session 1 and the public session is sessino 2, then yoour changes can have no impact on the allocation you get if you run the algorithm.
+If you make changes, say by adding a course allocation, to session 1 and the public session is sessino 2, then your changes can have no impact on the allocation you get if you run the algorithm.
 
   The public session is determined by the second section on the `ta_alloc` main page with section title `The algorithm is using session `, as below.
 
-  ![alt](assets/alogorithm_choice.png "Algorithm")
+  ![alt](documentation/user_manual/assets/alogorithm_choice.png "Algorithm")
   
   According to this figure, the algorithm is using data from session 1. Notice the line that says `The algorithm is currently unlocked`.   When the algorithm is unlocked, you can run it.  When the algorithm is locked, the algorithm won't run.  This prevents you from inadvertently over writing the allocation of tas to courses that you have already made public.
   
